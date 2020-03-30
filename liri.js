@@ -29,9 +29,10 @@ function findConcerts(arg) {
   axios
     .get(queryURL)
     .then(function(response) {
+      var movie = response.data;
       console.log("Fetched Concerts: ");
       var concerts = [];
-      response.data.forEach((element) => {
+      movie.forEach((element) => {
         concerts.push({
           Venue: element.venue.name,
           Location:
@@ -46,7 +47,7 @@ function findConcerts(arg) {
       console.table(concerts);
     })
     .catch(function(error) {
-      console.log(error.response.data.errorMessage);
+      console.log(error.movie.errorMessage);
     });
 }
 
@@ -94,6 +95,36 @@ function findSong(arg) {
   }
 }
 
+function findMovie(arg) {
+  var query;
+  if (!arg) {
+    query = "Mr. Nobody";
+  } else {
+    query = arg;
+  }
+  axios
+    .get("http://www.omdbapi.com/?t=" + query + "&apikey=" + keys.omdb)
+    .then(function(response) {
+      var movie = response.data;
+
+      var rating = movie.Ratings.find((r) => {
+        return r.source === "Rotten Tomatoes";
+      });
+      console.table({
+        Title: movie.Title,
+        Year: movie.Year,
+        IMDB: movie.imdbRating,
+        "Rotten Tomatoes": rating ? rating.Value : "N/A",
+        Country: movie.Country,
+        Actors: movie.Actors,
+        Plot: movie.Plot
+      });
+    })
+    .catch(function(error) {
+      console.log("Error: " + error);
+    });
+}
+
 // Executes the entered command
 function executeCommand(args) {
   switch (args[0]) {
@@ -107,6 +138,7 @@ function executeCommand(args) {
       break;
     case "movie-this":
       console.log("Finding Moive");
+      findMovie(args[1]);
       break;
     case "do-what-it-says":
       console.log("Reading File");

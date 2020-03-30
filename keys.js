@@ -5,5 +5,5 @@ exports.spotify = {
   secret: process.env.SPOTIFY_SECRET
 };
 
-exports.omdb = "trilogy";
-exports.concert = "codingbootcamp";
+exports.omdb = process.env.OMDB_API;
+exports.concert = process.env.BANDS_API;
