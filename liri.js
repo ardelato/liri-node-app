@@ -22,7 +22,9 @@ function usage() {
 
 function findConcerts(arg) {
   var queryURL =
-    "https://rest.bandsintown.com/artists/celine+dion/events?app_id=" +
+    "https://rest.bandsintown.com/artists/" +
+    arg.replace(" ", "+") +
+    "/events?app_id=" +
     concertAPI;
   axios
     .get(queryURL)
@@ -30,7 +32,6 @@ function findConcerts(arg) {
       console.log("Fetched Concerts: ");
       var concerts = [];
       response.data.forEach((element) => {
-        var m = moment(element.datetime, "MM/DD/YYYY");
         concerts.push({
           Venue: element.venue.name,
           Location:
@@ -39,24 +40,70 @@ function findConcerts(arg) {
             element.venue.region +
             ", " +
             element.venue.country,
-          Date: m.format()
+          Date: moment(element.datetime).format("MM/DD/YYYY")
         });
       });
       console.table(concerts);
     })
     .catch(function(error) {
-      console.log("ERROR" + error);
+      console.log(error.response.data.errorMessage);
     });
 }
+
+function findSong(arg) {
+  if (!arg) {
+    // Defaulting to "The Sign" by Ace of Base
+    spotify
+      .request("https://api.spotify.com/v1/tracks/0hrBpAOgrt8RXigk83LLNE")
+      .then(function(data) {
+        console.table({
+          Artists: "Ace of Base",
+          Song: "The Sign",
+          Link: data.external_urls.spotify,
+          Album: data.album.name
+        });
+      })
+      .catch(function(error) {
+        console.error("Error: " + error);
+      });
+  } else {
+    spotify.search({ type: "track", query: arg }, function(err, data) {
+      if (err) {
+        return console.log("Error occurred: " + err);
+      }
+      var songs = [];
+      data.tracks.items.forEach((element) => {
+        var artists = "";
+        element.artists.forEach((artist, idx, array) => {
+          if (idx === array.length - 1) {
+            artists += artist.name;
+          } else {
+            artists += artist.name + " & ";
+          }
+        });
+
+        songs.push({
+          Artists: artists,
+          Song: element.name,
+          Link: element.external_urls.spotify,
+          Album: element.album.name
+        });
+      });
+      console.table(songs);
+    });
+  }
+}
+
 // Executes the entered command
 function executeCommand(args) {
   switch (args[0]) {
     case "concert-this":
-      console.log("Finding Concert");
+      console.log("Finding Concerts");
       findConcerts(args[1]);
       break;
     case "spotify-this-song":
       console.log("Spotifying");
+      findSong(args[1]);
       break;
     case "movie-this":
       console.log("Finding Moive");
