@@ -1,0 +1,119 @@
+03-31-2020, 10:12:56 pm
+
+ Command: concert-this,Celine Dion
+		{"Venue":"Hallenstadion","Location":"Zürich, , Switzerland","Date":"06/02/2020"}
+		{"Venue":"Hallenstadion","Location":"Zürich, , Switzerland","Date":"06/03/2020"}
+		{"Venue":"ARENA ZAGREB","Location":"Zagreb, , Croatia","Date":"06/05/2020"}
+		{"Venue":"Papp Laszlo Arena","Location":"Budapest, , Hungary","Date":"06/07/2020"}
+		{"Venue":"Ziggo Dome","Location":"Amsterdam Zuidoost, , Netherlands","Date":"06/10/2020"}
+		{"Venue":"Ziggo Dome","Location":"Amsterdam Zuidoost, , Netherlands","Date":"06/12/2020"}
+		{"Venue":"Ziggo Dome","Location":"Amsterdam Zuidoost, , Netherlands","Date":"06/13/2020"}
+		{"Venue":"Wiener Stadthalle - Halle D","Location":"Vienna, , Austria","Date":"06/15/2020"}
+		{"Venue":"Olympiahalle","Location":"Munich, , Germany","Date":"06/17/2020"}
+		{"Venue":"SAP Arena","Location":"Mannheim, , Germany","Date":"06/19/2020"}
+		{"Venue":"Lanxess Arena","Location":"Cologne, , Germany","Date":"06/21/2020"}
+		{"Venue":"Barclaycard Arena Hamburg","Location":"Hamburg, , Germany","Date":"06/22/2020"}
+		{"Venue":"PARIS LA DEFENSE ARENA","Location":"Nanterre, , France","Date":"06/26/2020"}
+		{"Venue":"PARIS LA DEFENSE ARENA","Location":"Nanterre, , France","Date":"06/27/2020"}
+		{"Venue":"PARIS LA DEFENSE ARENA","Location":"Nanterre, , France","Date":"06/30/2020"}
+		{"Venue":"PARIS LA DEFENSE ARENA","Location":"Nanterre, , France","Date":"07/01/2020"}
+		{"Venue":"PARIS LA DEFENSE ARENA","Location":"Nanterre, , France","Date":"07/03/2020"}
+		{"Venue":"PARIS LA DEFENSE ARENA","Location":"Nanterre, , France","Date":"07/04/2020"}
+		{"Venue":"Site De Kerampuil A Carhaix","Location":"Carhaix-plouguer, , France","Date":"07/16/2020"}
+		{"Venue":"Plaine De L'asse","Location":"Noyon, , France","Date":"07/20/2020"}
+		{"Venue":"Waldbühne Berlin","Location":"Berlin, , Germany","Date":"07/22/2020"}
+		{"Venue":"Mura di Lucca - Viale Carducci","Location":"Lucca, , Italy","Date":"07/25/2020"}
+		{"Venue":"National Stadium Bukarest","Location":"Bucharest, , Romania","Date":"07/29/2020"}
+		{"Venue":"Hartwall Arena","Location":"Helsinki, , Finland","Date":"08/24/2020"}
+		{"Venue":"Hartwall Arena","Location":"Helsinki, , Finland","Date":"08/25/2020"}
+		{"Venue":"Telenor Arena","Location":"Oslo, , Norway","Date":"08/28/2020"}
+		{"Venue":"Telenor Arena","Location":"Oslo, , Norway","Date":"08/29/2020"}
+		{"Venue":"Royal Arena","Location":"Copenhagen, , Denmark","Date":"08/31/2020"}
+		{"Venue":"Royal Arena","Location":"Copenhagen, , Denmark","Date":"09/01/2020"}
+		{"Venue":"Manchester Arena","Location":"Manchester, , United Kingdom","Date":"09/04/2020"}
+		{"Venue":"Manchester Arena","Location":"Manchester, , United Kingdom","Date":"09/05/2020"}
+		{"Venue":"Arena Birmingham","Location":"Birmingham, , United Kingdom","Date":"09/08/2020"}
+		{"Venue":"Arena Birmingham","Location":"Birmingham, , United Kingdom","Date":"09/09/2020"}
+		{"Venue":"SSE Hydro","Location":"Glasgow, , United Kingdom","Date":"09/11/2020"}
+		{"Venue":"SSE Hydro","Location":"Glasgow, , United Kingdom","Date":"09/12/2020"}
+		{"Venue":"3Arena","Location":"Dublin, , Ireland","Date":"09/14/2020"}
+		{"Venue":"3Arena","Location":"Dublin, , Ireland","Date":"09/15/2020"}
+		{"Venue":"The O2","Location":"London, , United Kingdom","Date":"09/17/2020"}
+		{"Venue":"The O2","Location":"London, , United Kingdom","Date":"09/18/2020"}
+		{"Venue":"Capital One Arena","Location":"Washington, DC, United States","Date":"11/16/2020"}
+		{"Venue":"PPG Paints Arena","Location":"Pittsburgh, PA, United States","Date":"11/18/2020"}
+		{"Venue":"Pepsi Center","Location":"Denver, CO, United States","Date":"03/24/2021"}
+		{"Venue":"Pechanga Arena San Diego","Location":"San Diego, CA, United States","Date":"03/31/2021"}
+		{"Venue":"Golden 1 Center","Location":"Sacramento, CA, United States","Date":"04/07/2021"}
+		{"Venue":"Chase Center","Location":"San Francisco, CA, United States","Date":"04/10/2021"}
+		{"Venue":"Moda Center","Location":"Portland, OR, United States","Date":"04/13/2021"}
+		{"Venue":"Tacoma Dome","Location":"Tacoma, WA, United States","Date":"04/15/2021"}
+		{"Venue":"Rogers Arena","Location":"Vancouver, BC, Canada","Date":"04/17/2021"}
+		{"Venue":"Rogers Arena","Location":"Vancouver, BC, Canada","Date":"04/18/2021"}
+		
+-------------------------------------------------------------------------------------
+03-31-2020, 10:39:22 pm
+
+ Command: spotify-this-song, Default: The Sign by Ace of Base
+		{"Artists":"Ace of Base","Song":"The Sign","Link":"https://open.spotify.com/track/0hrBpAOgrt8RXigk83LLNE","Album":"The Sign"}
+-------------------------------------------------------------------------------------
+03-31-2020, 10:41:16 pm
+
+ Command: spotify-this-song,Rabbit Hole
+		{"Name":"Rabbit Hole","Artists":"AViVA","Preview":"https://p.scdn.co/mp3-preview/ef8232d18aed0348014adf33903eac757b25ce21?cid=76af7d5eaa76488c8ea0f45c56c9fafe","Album":"Rabbit Hole"}
+		{"Name":"Rabbit Hole","Artists":"CamelPhat & Jem Cooke","Preview":"https://p.scdn.co/mp3-preview/f7fda20008f2e7d76c059760d3203d1c707b0d17?cid=76af7d5eaa76488c8ea0f45c56c9fafe","Album":"Rabbit Hole"}
+		{"Name":"Rabbit Hole","Artists":"Whxami","Preview":"https://p.scdn.co/mp3-preview/c115f3f596e99f29374698b053d15ce9fe1bfe09?cid=76af7d5eaa76488c8ea0f45c56c9fafe","Album":"Rabbit Hole"}
+		{"Name":"Rabbit Hole","Artists":"blink-182","Preview":"https://p.scdn.co/mp3-preview/959d6f1352ed3da1d050d9e4349d329169c62d2c?cid=76af7d5eaa76488c8ea0f45c56c9fafe","Album":"California"}
+		{"Name":"Rabbit Hole","Artists":"Speed Gang","Preview":"https://p.scdn.co/mp3-preview/d92ddd417744768af0e0abbbe2e2e74866d80e83?cid=76af7d5eaa76488c8ea0f45c56c9fafe","Album":"Rabbit Hole"}
+		{"Name":"Rabbit Hole","Artists":"Jenny Lewis","Preview":"https://p.scdn.co/mp3-preview/a22395dbdc2c493c5861f52853e038a2bdca913b?cid=76af7d5eaa76488c8ea0f45c56c9fafe","Album":"On The Line"}
+		{"Name":"Rabbit Hole","Artists":"Natalia Kills","Preview":null,"Album":"Trouble"}
+		{"Name":"Rabbit Hole","Artists":"Secret Band","Preview":"https://p.scdn.co/mp3-preview/71b55dd1cd4f643ab27eb2702fa4823896d9fe57?cid=76af7d5eaa76488c8ea0f45c56c9fafe","Album":"LP2"}
+		{"Name":"Rabbit Hole","Artists":"Ruby Waters","Preview":"https://p.scdn.co/mp3-preview/d1c2e402e20306b30e1cc0194dfb9fd8a2f6a0c5?cid=76af7d5eaa76488c8ea0f45c56c9fafe","Album":"Rabbit Hole"}
+		{"Name":"Rabbit Hole","Artists":"Mindy Gledhill","Preview":"https://p.scdn.co/mp3-preview/023fbddc20ba3ae176cdf4b02cb5798618bb2bd1?cid=76af7d5eaa76488c8ea0f45c56c9fafe","Album":"Rabbit Hole"}
+		{"Name":"Rabbit Hole","Artists":"Living Legends","Preview":"https://p.scdn.co/mp3-preview/14a50517f113791643cb5feee3cfc1cc1264b783?cid=76af7d5eaa76488c8ea0f45c56c9fafe","Album":"Almost Famous"}
+		{"Name":"Rabbit Hole - Bontan Remix","Artists":"CamelPhat & Jem Cooke & Bontan","Preview":"https://p.scdn.co/mp3-preview/da4dc538603e8ba55eebb6c1c0610f568b479cf9?cid=76af7d5eaa76488c8ea0f45c56c9fafe","Album":"Rabbit Hole (Bontan Remix)"}
+		{"Name":"Rabbit Hole - Demo","Artists":"Jenny Lewis","Preview":"https://p.scdn.co/mp3-preview/5ea39ba26eb24d6789c29514524538d741674f2b?cid=76af7d5eaa76488c8ea0f45c56c9fafe","Album":"On The iPhone"}
+		{"Name":"Rabbit Hole","Artists":"Jake Mirador","Preview":"https://p.scdn.co/mp3-preview/2720b06928c8902cc985bd692f22517cf38cd4a0?cid=76af7d5eaa76488c8ea0f45c56c9fafe","Album":"Rabbit Hole"}
+		{"Name":"Rabbit Hole","Artists":"The Temper Trap","Preview":"https://p.scdn.co/mp3-preview/b97b4eb678fd4ca4cd1af00d902049ee6a941b3d?cid=76af7d5eaa76488c8ea0f45c56c9fafe","Album":"The Temper Trap"}
+		{"Name":"Rabbit Hole","Artists":"Forever in Your Mind","Preview":"https://p.scdn.co/mp3-preview/07e379a992e891942c7c4af68c9773e6fecbc261?cid=76af7d5eaa76488c8ea0f45c56c9fafe","Album":"Rabbit Hole"}
+		{"Name":"Rabbit Hole","Artists":"Jamie T","Preview":null,"Album":"Carry On The Grudge"}
+		{"Name":"Rabbit Hole","Artists":"Spose","Preview":"https://p.scdn.co/mp3-preview/2c79517031a043f01f70afd0cedd7290702eaf54?cid=76af7d5eaa76488c8ea0f45c56c9fafe","Album":"We All Got Lost"}
+		{"Name":"Rabbit Hole","Artists":"Eisley","Preview":"https://p.scdn.co/mp3-preview/d1efa9c0ff497c8338a592dce28a299442944c33?cid=76af7d5eaa76488c8ea0f45c56c9fafe","Album":"I'm Only Dreaming"}
+		{"Name":"The Rabbit Hole","Artists":"In This Moment","Preview":"https://p.scdn.co/mp3-preview/d5cf8104ff624a971e6eaadd19aef81e75ecd7db?cid=76af7d5eaa76488c8ea0f45c56c9fafe","Album":"Rise of the Blood Legion- The Best of (Chapter 1)"}
+		
+-------------------------------------------------------------------------------------
+03-31-2020, 10:46:19 pm
+
+ Command: movie-this,undefined
+		{"Title":"Mr. Nobody","Year":"2009","IMDB":"7.8","Rotten Tomatoes":"N/A","Country":"Belgium, Germany, Canada, France, UK, Luxembourg","Actors":"Jared Leto, Sarah Polley, Diane Kruger, Linh Dan Pham","Plot":"A boy stands on a station platform as a train is about to leave. Should he go with his mother or stay with his father? Infinite possibilities arise from this decision. As long as he doesn't choose, anything is possible."}
+-------------------------------------------------------------------------------------
+03-31-2020, 10:46:53 pm
+
+ Command: movie-this,Avatar
+		{"Title":"Avatar","Year":"2009","IMDB":"7.8","Rotten Tomatoes":"N/A","Country":"USA","Actors":"Sam Worthington, Zoe Saldana, Sigourney Weaver, Stephen Lang","Plot":"A paraplegic Marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home."}
+-------------------------------------------------------------------------------------
+03-31-2020, 10:47:37 pm
+
+ Command: spotify-this-song,I Want it That Way
+		{"Name":"I Want It That Way","Artists":"Backstreet Boys","Preview":"https://p.scdn.co/mp3-preview/e72a05dc3f69c891e3390c3ceaa77fad02f6b5f6?cid=76af7d5eaa76488c8ea0f45c56c9fafe","Album":"The Hits--Chapter One"}
+		{"Name":"I Want It That Way","Artists":"Mick Jensen","Preview":"https://p.scdn.co/mp3-preview/f8181f66713983fab073e133e23c741acbe00d75?cid=76af7d5eaa76488c8ea0f45c56c9fafe","Album":"I Want It That Way"}
+		{"Name":"I Want It That Way","Artists":"Anthem Lights","Preview":"https://p.scdn.co/mp3-preview/4a163fbfa2dbbe4433f277e0e7395dca656364f5?cid=76af7d5eaa76488c8ea0f45c56c9fafe","Album":"Covers Part IV"}
+		{"Name":"I Want It That Way","Artists":"Tyler and Mark","Preview":"https://p.scdn.co/mp3-preview/99c791194bbd4e5f315ca8964babf0b69bc520b3?cid=76af7d5eaa76488c8ea0f45c56c9fafe","Album":"Beautiful Dreams"}
+		{"Name":"I Want It That Way / Bye Bye Bye","Artists":"Anthem Lights & Dan Berk","Preview":"https://p.scdn.co/mp3-preview/82b2ff786fedce4e1a314d69f15ff5c705049ef5?cid=76af7d5eaa76488c8ea0f45c56c9fafe","Album":"I Want It That Way / Bye Bye Bye"}
+		{"Name":"I Want It That Way","Artists":"Dynamite Boy","Preview":null,"Album":"Punk Goes Pop"}
+		{"Name":"I Want It That Way","Artists":"Ryan Tenner","Preview":"https://p.scdn.co/mp3-preview/9c9217848c811676226a09cf721f27f102588521?cid=76af7d5eaa76488c8ea0f45c56c9fafe","Album":"Pop Piano Covers"}
+		{"Name":"I Want It That Way","Artists":"Steel Panther","Preview":null,"Album":"I Want It That Way"}
+		{"Name":"I Want It That Way","Artists":"Jess and Gabriel","Preview":"https://p.scdn.co/mp3-preview/cc50bfee8d34ec92fda4109243c7ef0e6856f185?cid=76af7d5eaa76488c8ea0f45c56c9fafe","Album":"Under the Covers, Vol. 3"}
+		{"Name":"I Want It That Way","Artists":"Scary Pockets & Casey Abrams","Preview":"https://p.scdn.co/mp3-preview/33685e005149d5e7d0199a764163ff77f7762e29?cid=76af7d5eaa76488c8ea0f45c56c9fafe","Album":"Nu Funk"}
+		{"Name":"I Want It That Way - Manuel's Southbeat Mix","Artists":"Manuel Costa","Preview":null,"Album":"I Want It That Way (The Remixes)"}
+		{"Name":"I Want It That Way - Reimagined","Artists":"Backstreet Boys","Preview":"https://p.scdn.co/mp3-preview/7f612d6ba66571500e981e74bb36e14b9906be77?cid=76af7d5eaa76488c8ea0f45c56c9fafe","Album":"I Want It That Way (Reimagined)"}
+		{"Name":"I Want It That Way","Artists":"Boyce Avenue","Preview":"https://p.scdn.co/mp3-preview/764f1dcb8c9a9cec099cc361cb388f931bf023d3?cid=76af7d5eaa76488c8ea0f45c56c9fafe","Album":"Cover Sessions, Vol. 2"}
+		{"Name":"I Want It That Way","Artists":"Cassidy Janson & Oliver Tompsett & Original London Cast of & Juliet","Preview":"https://p.scdn.co/mp3-preview/6df704bcaee02f82fefacbfaaca2ab8858119947?cid=76af7d5eaa76488c8ea0f45c56c9fafe","Album":"& Juliet (Original London Cast Recording)"}
+		{"Name":"I Want It That Way","Artists":"Zita & Jonah Baker","Preview":"https://p.scdn.co/mp3-preview/2ce29a5a3beb747bb223e2f48c6b9139ff46f8fd?cid=76af7d5eaa76488c8ea0f45c56c9fafe","Album":"I Want It That Way"}
+		{"Name":"I Want It That Way","Artists":"Yshop","Preview":"https://p.scdn.co/mp3-preview/8d1287b933d37b96943a5041ebcd46c328c9a0ce?cid=76af7d5eaa76488c8ea0f45c56c9fafe","Album":"I Want It That Way"}
+		{"Name":"I Want It That Way","Artists":"Manuel Costa","Preview":null,"Album":"I Want It That Way"}
+		{"Name":"I Want It That Way","Artists":"Scott Bradlee's Postmodern Jukebox & Shoshana Bean","Preview":"https://p.scdn.co/mp3-preview/53296f4b689baaa0be6d94e8720c044e98d4b3e3?cid=76af7d5eaa76488c8ea0f45c56c9fafe","Album":"Selfies on Kodachrome"}
+		{"Name":"I Want It That Way - Reprise","Artists":"Oliver Tompsett & Cassidy Janson & Miriam-Teak Lee & Jordan Luke Gage & Original London Cast of & Juliet","Preview":"https://p.scdn.co/mp3-preview/a09ef57f7e6bfb7de66cb5c3b6d68d215f388d45?cid=76af7d5eaa76488c8ea0f45c56c9fafe","Album":"& Juliet (Original London Cast Recording)"}
+		{"Name":"I Want It That Way","Artists":"#90s Update","Preview":"https://p.scdn.co/mp3-preview/4722ade5be55bf642f5cc9578b94c092a0fcf3a7?cid=76af7d5eaa76488c8ea0f45c56c9fafe","Album":"#90s Update"}
+		
+-------------------------------------------------------------------------------------

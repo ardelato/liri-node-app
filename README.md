@@ -44,5 +44,7 @@ CONDITIONALS
 
 **If no movie entered, default to "Mr.Nobody"**
 
-// do-what-it-says // node liri.js do-what-it-says // using the fs node package
-read what is inside the random.txt file and make the calls that way
+### do-what-it-says 
+Example: `node liri.js do-what-it-says` 
+
+Description: using the fs node package read what is inside the random.txt file and make the calls that way

@@ -2,6 +2,7 @@ require("dotenv").config();
 
 const axios = require("axios");
 const moment = require("moment");
+const fs = require("fs");
 
 var keys = require("./keys.js");
 
@@ -20,7 +21,27 @@ function usage() {
   console.groupEnd();
 }
 
+function logInfo(command, data) {
+  var outPutString;
+
+  outPutString =
+    moment().format("MM-DD-YYYY, h:mm:ss a") +
+    "\n\n Command: " +
+    command +
+    "\n\t\t" +
+    data +
+    "\n-------------------------------------------------------------------------------------\n";
+  fs.appendFile("./log.txt", outPutString, function(error) {
+    if (error) {
+      console.log("ERROR LOGGING");
+    }
+  });
+}
+
 function findConcerts(arg) {
+  if (!arg) {
+    return usage();
+  }
   var queryURL =
     "https://rest.bandsintown.com/artists/" +
     arg.replace(" ", "+") +
@@ -29,11 +50,12 @@ function findConcerts(arg) {
   axios
     .get(queryURL)
     .then(function(response) {
-      var movie = response.data;
+      var concert = response.data;
       console.log("Fetched Concerts: ");
       var concerts = [];
-      movie.forEach((element) => {
-        concerts.push({
+      var logData = "";
+      concert.forEach((element) => {
+        var data = {
           Venue: element.venue.name,
           Location:
             element.venue.city +
@@ -42,12 +64,15 @@ function findConcerts(arg) {
             ", " +
             element.venue.country,
           Date: moment(element.datetime).format("MM/DD/YYYY")
-        });
+        };
+        logData += JSON.stringify(data) + "\n\t\t";
+        concerts.push(data);
       });
       console.table(concerts);
+      logInfo("concert-this," + arg, logData);
     })
     .catch(function(error) {
-      console.log(error.movie.errorMessage);
+      console.log(error);
     });
 }
 
@@ -57,12 +82,16 @@ function findSong(arg) {
     spotify
       .request("https://api.spotify.com/v1/tracks/0hrBpAOgrt8RXigk83LLNE")
       .then(function(data) {
-        console.table({
+        var logData = "";
+        var jData = {
           Artists: "Ace of Base",
           Song: "The Sign",
           Link: data.external_urls.spotify,
           Album: data.album.name
-        });
+        };
+        logData = JSON.stringify(jData);
+        console.table(jData);
+        logInfo("spotify-this-song, Default: The Sign by Ace of Base", logData);
       })
       .catch(function(error) {
         console.error("Error: " + error);
@@ -72,9 +101,12 @@ function findSong(arg) {
       if (err) {
         return console.log("Error occurred: " + err);
       }
-      var songs = [];
+      console.group("Found Songs");
+      var logData = "";
       data.tracks.items.forEach((element) => {
+        var data;
         var artists = "";
+        // console.log(element);
         element.artists.forEach((artist, idx, array) => {
           if (idx === array.length - 1) {
             artists += artist.name;
@@ -82,15 +114,22 @@ function findSong(arg) {
             artists += artist.name + " & ";
           }
         });
-
-        songs.push({
+        data = {
+          Name: element.name,
           Artists: artists,
-          Song: element.name,
-          Link: element.external_urls.spotify,
+          Preview: element.preview_url,
           Album: element.album.name
-        });
+        };
+        console.group(element.name);
+        console.log("Artists: " + artists);
+        console.log("Preview: " + element.preview_url);
+        console.log("Album: " + element.album.name);
+        console.groupEnd();
+
+        logData += JSON.stringify(data) + "\n\t\t";
       });
-      console.table(songs);
+      logInfo("spotify-this-song," + arg, logData);
+      console.groupEnd();
     });
   }
 }
@@ -106,11 +145,12 @@ function findMovie(arg) {
     .get("http://www.omdbapi.com/?t=" + query + "&apikey=" + keys.omdb)
     .then(function(response) {
       var movie = response.data;
-
+      var data;
+      var logData = "";
       var rating = movie.Ratings.find((r) => {
         return r.source === "Rotten Tomatoes";
       });
-      console.table({
+      data = {
         Title: movie.Title,
         Year: movie.Year,
         IMDB: movie.imdbRating,
@@ -118,11 +158,28 @@ function findMovie(arg) {
         Country: movie.Country,
         Actors: movie.Actors,
         Plot: movie.Plot
-      });
+      };
+      logData = JSON.stringify(data);
+      logInfo("movie-this," + arg, logData);
+      console.table(data);
     })
     .catch(function(error) {
       console.log("Error: " + error);
     });
+}
+
+function readFile() {
+  fs.readFile("random.txt", "utf8", (error, data) => {
+    if (error) {
+      return console.log(error);
+    }
+    console.log(data);
+    var instructions = data.split(",");
+
+    instructions[1] = JSON.parse(instructions[1]);
+    console.log(instructions);
+    executeCommand(instructions);
+  });
 }
 
 // Executes the entered command
@@ -142,6 +199,7 @@ function executeCommand(args) {
       break;
     case "do-what-it-says":
       console.log("Reading File");
+      readFile();
       break;
     default:
       console.log("Command <" + args[0] + "> not found");
@@ -157,29 +215,3 @@ var arguments = process.argv.slice(2);
 console.log("Arguements: " + arguments);
 
 executeCommand(arguments);
-
-//concert-this
-
-// EXAMPLE
-// node liri.js concert-this <artist/band name here>
-// API CALL "https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp"
-// RETURN
-// Name of venue, Venue Location, Date of the Event in ("MM/DD/YYYY")
-
-// spotify-this-song
-// node liri.js spotify-this-song "Name of Song"
-// RETURN
-// Artist(s), Name of the Song, Preview link of the song from spotify, the album that song is from
-// CONDITIONALS
-// No song, default "The Sign" by Ace of Base
-
-// movie-this
-// node liri.js movie-this "movie name"
-// RETURN
-// Title of the movie, Year the movie came out, IMDB Rating of the Movie, Rotten Tomatoes Rating of the Movie, Country where the movie was produced, langauge of the movie, plot of the movie, actors in the movie
-// CONDITIONALS
-// No movie, default to "Mr. Nobody"
-
-// do-what-it-says
-// node liri.js do-what-it-says
-// using the fs node package read what is inside the random.txt file and make the calls that way
