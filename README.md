@@ -27,10 +27,8 @@ To create a node based language interpretation and recognition interface that ca
 ---
 ### **concert-this**
 
-EXAMPLE: <br> `node liri.js concert-this <artist/band name here> // API CALL`
-<br>
-"https://rest.bandsintown.com/artists/" + artist +
-"/events?app_id=codingbootcamp" <br> <br>
+EXAMPLE: <br> `node liri.js concert-this <artist/band name here>`
+
 RETURN:
 
 1. Name of venue
